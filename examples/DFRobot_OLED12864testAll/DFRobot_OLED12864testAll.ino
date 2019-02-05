@@ -224,16 +224,16 @@ void loop(void)
       }
     }
   } else {
-    OLED.disStr(0, 0, "没有按键被按下");
+    OLED.disStr(0, 0, "CETECH DISPLAY");
   }
   key_analog = read_key_analog();
   switch(key_analog) {
-    case key_analog_no:     OLED.disStr(0, 16, "模拟按键未被按下");break;
-    case key_analog_up:     OLED.disStr(0, 16, "模拟按键向上");break;
-    case key_analog_down:   OLED.disStr(0, 16, "模拟按键向下");break;
-    case key_analog_right:  OLED.disStr(0, 16, "模拟按键向右");break;
-    case key_analog_left:   OLED.disStr(0, 16, "模拟按键向左");break;
-    case key_analog_center: OLED.disStr(0, 16, "模拟按键中间按下");break;
+    case key_analog_no:     OLED.disStr(0, 16, "NONE");break;
+    case key_analog_up:     OLED.disStr(0, 16, "UP");break;
+    case key_analog_down:   OLED.disStr(0, 16, "DOWN");break;
+    case key_analog_right:  OLED.disStr(0, 16, "RIGHT");break;
+    case key_analog_left:   OLED.disStr(0, 16, "LEFT");break;
+    case key_analog_center: OLED.disStr(0, 16, "CENTER");break;
   }
   OLED.display();
 }
